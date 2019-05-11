@@ -2,6 +2,10 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2 @click="open_search(curso)">{{ curso }}</h2>
+    <div class="next"  @click="return_sort">
+      <button>Proximo</button>
+    </div>
+    
   </div>
 </template>
 
@@ -222,6 +226,26 @@ export default {
   }
   h2{
     cursor: pointer;
-    font-size: 50px;
+    font-size: 40px;
+  }
+  button{
+    background: #cc1f41;
+    color: #ffffff;
+    font-size: 23px;
+    border: 0;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+  
+  
+  }
+  .next{
+    height: 55px;
+    cursor: pointer;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #cc1f41;
   }
 </style>
